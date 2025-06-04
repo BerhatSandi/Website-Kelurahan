@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="max-image-preview:large" />
+
+    <meta name="title" content="Beranda | Kelurahan Kutabumi" />
+    <title>Beranda | Kelurahan Kutabumi</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/logo_kabupatentangerang_perda.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <style>
+      .card-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+      .card-layanan {
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .card-layanan:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #088395;
+        color: white;
+      }
+
+      .custom-section-pencarian {
+        background: #f9f9f9;
+        padding: 60px 0;
+      }
+      .custom-section-pencarian h2 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .custom-section-pencarian p {
+        color: #666;
+        line-height: 1.6;
+      }
+      .custom-section-pencarian img {
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .custom-section-pencarian .btn-primary {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 20px;
+      }
+      .custom-section-pencarian .btn-primary:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body class="text-left">
+    <div class="shadow fixed-top">
+      <header class="navbar navbar-expand-lg navbar-light nav-header">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/images/logo_kabupatentangerang_perda.png"
+              alt="Logo"
+              height="40"
+            />
+          </a>
+          <p class="m-auto h5">Kelurahan Kutabumi</p>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active">Beranda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Profil
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="profil/sejarah.html"
+                    >Sejarah</a
+                  >
+                  <a class="dropdown-item" href="profil/visimisi.html"
+                    >Visi & Misi</a
+                  >
+                  <a class="dropdown-item" href="profil/strukturorganisasi.html"
+                    >Gambaran Umum Struktur Organisasi</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown2"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Informasi Publik
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <a
+                    class="dropdown-item"
+                    href="informasi-publik/administrasi.html"
+                    >Administrasi</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="informasi-publik/kesehatan.html"
+                    >Kesehatan</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="informasi-publik/pendidikan.html"
+                    >Pendidikan</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="umkm.html" class="nav-link"></a>
+              </li>
+              <li class="nav-item">
+                <a href="dokumentasi.html" class="nav-link">Dokumentasi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- carosel -->
+    <div class="mb-4">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide headers-banner"
+        data-ride="carousel"
+        data-interval="60000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="search-title-content d-none d-md-block">
+              <div class="image">
+                <img
+                  src="assets/images/logo_kabupatentangerang_perda.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="text-center">
+                <h1 class="mt-2">KELURAHAN KUTABUMI</h1>
+                <h4>
+                  "Terwujudnya Masyarakat Kelurahan Kutabumi yang Religius, Mandiri, Maju yang Berorientasi pada Wawasan Lingkungan"
+                </h4>
+              </div>
+            </div>
+            <div>
+              <img
+                class="d-block w-100 carousel-image"
+                src="assets/images/IMG-20220218-WA0026.jpg"
+                alt="First slide"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- carosel end -->
+    <!-- Welcome -->
+    <div class="py-4">
+      <div class="container">
+        <div class="row mx-0 py-4">
+          <div class="col-md-4 col-sm-12">
+            <p class="font-weight-500 text-on-welcome">
+              SELAMAT DATANG DI OFFICIAL WEBSITE KELURAHAN KUTABUMI
+            </p>
+            <p class="text-justify">
+              Selamat datang di portal informasi resmi Kelurahan Kutabumi. Di sini,
+              Anda dapat menemukan berbagai informasi mengenai layanan,
+              fasilitas, dan program-program yang tersedia di kelurahan kami.
+              Kenali lebih dalam komunitas kami, sejarah, budaya, serta berbagai
+              kegiatan yang menjadikan Kelurahan Kutabumi tempat yang unik dan
+              menarik. Jelajahi situs ini untuk mengetahui lebih banyak tentang
+              upaya kami dalam membangun lingkungan yang harmonis dan sejahtera
+              untuk semua warga
+            </p>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <img
+              src="assets/images/IMG-20220218-WA0026.jpg"
+              alt=""
+              class="img-fluid welcome-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container mt-5 mb-4">
+      <p class="mt-4 mb-4 font-weight-bold text-on-title">
+        INFORMASI DAN LAYANAN
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <img
+            src="assets/images/bg-Pelayanan.jpg"
+            class="img-fluid welcome-img lg-w-50"
+            alt="Section Image"
+          />
+        </div>
+        <div class="col-md-5">
+          <p class="font-weight-500 text-on-welcome mt-3 mt-lg-0 mt-md-1">
+            Informasi Administrasi
+          </p>
+          <p class="text-justify">
+            Kemudahan dalam Mengurus Dokumen Penting warga Kami di Kelurahan
+            Kutabumi memahami betapa pentingnya dokumen-dokumen administratif dalam
+            kehidupan sehari-hari. Oleh karena itu, kami menyediakan berbagai
+            layanan administrasi untuk membantu warga kutabumi mengurus
+            dokumen-dokumen penting seperti Kartu Tanda Penduduk (KTP), Kartu
+            Keluarga (KK), akta kelahiran, akta kematian, surat pindah, dan
+            berbagai surat keterangan lainnya. Layanan ini dirancang untuk
+            memudahkan warga dalam mengurus kebutuhan administratif sehari-hari.
+            Dengan proses yang cepat dan mudah, pelayanan yang ramah dari staf
+            kami, dalam hal ini kami berharap dapat memberikan pengalaman yang
+            efisien dan nyaman bagi warga. Informasi lengkap dan panduan
+            persyaratan tersedia untuk memastikan warga kutabumi mendapatkan
+            layanan terbaik.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-2 pb-5">
+        <div class="col-md-12">
+          <p class="mt-4 mb-4 font-weight-bold text-on-sub-title">PENDUDUK</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div
+            class="card card-layanan text-center"
+            onclick="location.href='informasi-publik/administrasi.html'"
+          >
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <h5 class="card-title">Layanan Administrasi</h5>
+              <p class="card-text">Berisi Informasi Persyaratan Administrasi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div
+            class="card card-layanan text-center"
+            onclick="location.href='informasi-publik/kesehatan.html'"
+          >
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="bi bi-heart-pulse"></i>
+              </div>
+              <h5 class="card-title">Layanan Kesehatan</h5>
+              <p class="card-text">Berisi Informasi Tentang Kesehatan</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div
+            class="card card-layanan text-center"
+            onclick="location.href='informasi-publik/pendidikan.html'"
+          >
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="bi bi-book"></i>
+              </div>
+              <h5 class="card-title">Layanan Pendidikan</h5>
+              <p class="card-text">Berisi Informasi Tentang Pendidikan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end info dan layanaan -->
+
+    <!-- Mata Pencarian -->
+    <!-- End MataPencarian -->
+
+    <!-- Berita-->
+    <!-- Parallax Section -->
+    <section class="parallax-section">
+      <p class="text-on-title">GALERI & BERITA KEGIATAN KELURAHAN KUTABUMI</p>
+    </section>
+
+    <!-- Facility Cards Section -->
+    <div class="container facility-cards">
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card facility-card"
+            onclick="window.location.href='dokumentasi.html';"
+          >
+            <img
+              src="assets/images/berita1.jpg"
+              class="card-img-top"
+              alt="Berita 1"
+            />
+            <div class="card-body facility-info">
+              <p class="card-title text-on-sub-title">
+                Sabtu, 22 Februari 2025
+              </p>
+              <p class="card-tex">Monitoring kegiatan dalam rangka menghadiri kegiatan pawai obor di masjid Al-Makmur di RW 16 Perumahan Bumi Asri Kelurahan Kutabumi</p>
+              <div class="facility-icons">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card facility-card"
+            onclick="window.location.href='dokumentasi.html';"
+          >
+            <img
+              src="assets/images/Berita 1.jpg"
+              class="card-img-top"
+              alt="Himbauan jam buka Rumah Makan saat bulan suci Ramadhan"
+            />
+            <div class="card-body facility-info">
+              <p class="card-title text-on-sub-title">Rabu, 26 Februari 2025</p>
+              <p class="card-text">Monitoring kegiatan dalam rangka menindak lanjuti himbauan Bupati Tangerang menjelang bulan Suci Ramadhan 1446H/2026M </p>
+              <div class="facility-icons">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card facility-card"
+            onclick="window.location.href='dokumentasi.html';"
+          >
+            <img
+              src="assets/images/Berita 3.jpg"
+              class="card-img-top"
+              alt="Pendistribusian Sembako Murah"
+            /> 
+            <div class="card-body facility-info">
+              <p class="card-title text-on-sub-title">
+                02-04 Maret 2025
+              </p>
+              <p class="card-text">Monitoring kegiatan dalam rangka Pengawasan dan pendistribusian sembako murah untuk masyarakat dilingkungan RW se-Kelurahan Kutabumi</p>
+              <div class="facility-icons">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <!-- Card 5 -->
+        <div class="col-lg-2"></div>
+      </div>
+      <a href="dokumentasi.html" class="btn btn-primary btn-view-all">Lihat Semua</a>
+    </div>
+    <!-- End Berita -->
+
+    <!-- Instagram -->
+    <div class="instagram-feed mt-5 py-5">
+      <div class="line-top">
+        <div class="container">
+          <div class="line-wrap"></div>
+        </div>
+      </div>
+      <div class="py-4">
+        <div class="container">
+          <div class="row mx-0">
+            <div class="col-md-12">
+              <p class="text-center text-on-title">OFFICIAL INSTAGRAM KELURAHAN KUTABUMI
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-instagram py-3">
+        <div class="container">
+          <div class="row mx-xs-0">
+            <div class="col-md-12 px-xs-0">
+              <div class="iframe-container">
+                <iframe
+                  src="https://www.instagram.com/kelurahan.kutabumi/embed/"
+                  frameborder="0"
+                  scrolling="no"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Instagram -->
+
+    <div class="kontak-kami">
+      <div class="container">
+        <div class="row mx-0 my-4">
+          <div class="col-md-12">
+            <p class="text-center text-on-title">TENTANG KAMI</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-kontak-kami mb-3">
+        <div class="container">
+          <div class="row mx-0">
+            <div class="col-md-6 my-4">
+              <div class="card">
+                <div class="card-body p-5">
+                  <div class="title mb-4">
+                    <p class="font-weight-bold text-on-sub-title">
+                      Portal Kelurahan Kutabumi
+                    </p>
+                  </div>
+                  <div class="row border-card">
+                    <div
+                      class="col-md-2 col-3 d-flex align-items-center justify-content-center"
+                    >
+                      <i class="bi bi-geo-alt alt h2"></i>
+                    </div>
+                    <div class="col-md-10 col-9">
+                      <p class="text-18 mb-0 color-red-theme font-weight-bold">
+                        Lokasi
+                      </p>
+                      <p class="text-14">
+                        VH27+C59 kode pos, Jl. Raya Kutabumi ko.sondol, Kutabumi, Kec. Ps. Kemis, Kabupaten Tangerang, Banten 15561
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 my-4">
+              <div class="card">
+                <div class="card-body">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.864046393104!2d106.56041717474994!3d-6.148954593838093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ff62d063d247%3A0x393d0f7deab41837!2sKantor%20Kelurahan%20KUTABUMI!5e0!3m2!1sid!2sid!4v1744773646366!5m2!1sid!2sid"
+                  width="100%"
+                  height="200"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <!-- Footer Start -->
+
+    <!--start footer -->
+    <div class="footers">
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-md-12 m-4">
+            <p class="text-15 text-white text-center mb-0 font-weight-300">
+              © Copyright 2025 <b>Kelurahan Kutabumi - Kabupaten Tangerang</b>. All Rights
+              Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
